@@ -1,0 +1,16 @@
+spark启动命令
+#cd /Users/walter/develop/spark
+#sbin/start-master.sh 
+#sbin/start-slave.sh 192.168.31.229:7077
+//统计单篇文档词频
+#bin/spark-submit --master local --class com.deepsearch.demo.TFCountDemo /Users/walter/Documents/jianguo/workspace/sparkdemo/files/sparkdemo.jar work
+#统计语料库文档总数
+bin/spark-submit --master local --class com.deepsearch.demo.DCountDemo /Users/walter/Documents/jianguo/workspace/sparkdemo/files/sparkdemo.jar work
+#统计语料库词频
+bin/spark-submit --master local --class com.deepsearch.demo.DFCountDemo /Users/walter/Documents/jianguo/workspace/sparkdemo/files/sparkdemo.jar work
+
+
+HBase启动命令
+#cd /Users/walter/develop/hbase-1.2.2
+#bin/start-hbase.sh
+#bin/hbase shell
